@@ -1,62 +1,83 @@
-# HadaSpace — פרויקט חלל
+Collecting workspace information```markdown
+# HadaSpace — Space Experience (English)
 
-תיאור קצר  
-פרויקט אתר סטטי המכיל דפי בית, כניסה/הרשמה, הזמנת כרטיסים, אביזרים, אוכל וסל קניות. הקבצים הראשיים בתיקייה מצויים ברשימה למטה.
+Professional, polished static site for a space-themed storefront and booking experience. The repo contains responsive pages, an animated floating menu, a login/signup UI, a simple image carousel, and placeholders for shopping and ordering flows.
 
-הפעלת הפרויקט (מהירה)
-- לפתיחה מהירה: פתח [home.html](home.html) בדפדפן.
-- מומלץ להריץ שרת סטטי (Live Server ב‑VSCode או Python):
-  - Python 3: 
-    ```sh
-    python -m http.server 8000
-    ```
-  - ואז פתח http://localhost:8000/home.html
+Quick start
+- Open [home.html](home.html) in your browser for a quick preview.
+- Recommended: run a static server for best results (Live Server in VS Code or):
+  ```sh
+  python -m http.server 8000
+  ```
+  Then open http://localhost:8000/home.html
 
-קבצים ותיאור קצר
-- דפי HTML:
-  - [home.html](http://_vscodecontentref_/0) — דף הבית
-  - [login.html](http://_vscodecontentref_/1) — דף כניסה/הרשמה
-  - [SignUp.html](http://_vscodecontentref_/2) — דף הרשמה (מראה דומה/הפוך)
-  - [OrderTickets.html](http://_vscodecontentref_/3) — הזמנת כרטיסים
-  - [Accessories.html](http://_vscodecontentref_/4) — אביזרים
-  - [Food.html](http://_vscodecontentref_/5) — אוכל
-  - [ShoppingCart.html](http://_vscodecontentref_/6) — סל קניות
-  - [setting.html](http://_vscodecontentref_/7) — הגדרות
+Highlights / Features
+- Modern responsive layout and reusable top navigation (menu.css).
+- Animated landing visuals and carousel with auto-rotate and manual controls:
+  - Carousel variables and functions: `imageArr`, `currentIndex`, `updateImage`, `nextImage`, `prevImage`, and the image element `AstronautsWords`.
+- Polished login / signup UX with animated input borders and form toggle:
+  - Interaction hooks: `inputs`, `buttons`, `form_container`. (Note: SignUp.js currently duplicates login.js.)
+- Modular CSS per page for easy theming and maintenance.
+- Static-first, framework-free codebase (vanilla HTML/CSS/JS) for maximum portability and simplicity.
 
-- קבצי CSS:
-  - [menu.css](http://_vscodecontentref_/8) — תפריט עליון משותף
-  - [home.css](http://_vscodecontentref_/9) — סגנון דף הבית
-  - [login.css](http://_vscodecontentref_/10) — סגנון דף כניסה/הרשמה
-  - [SignUp.css](http://_vscodecontentref_/11) — סגנון עמוד הרשמה (שקול)
-  - [OrderTickets.css](http://_vscodecontentref_/12)
-  - [Accessories.css](http://_vscodecontentref_/13)
-  - [Food.css](http://_vscodecontentref_/14)
-  - [ShoppingCart.css](http://_vscodecontentref_/15)
-  - [setting.css](http://_vscodecontentref_/16)
-  - [index.css](http://_vscodecontentref_/17)
+Technologies
+- HTML5, CSS3 (grid/flex + animations)
+- Vanilla JavaScript (ES6)
+- Google Fonts (Montserrat)
+- Static assets (images in pictures/)
+- Recommended dev tools: VS Code, Live Server, browser dev tools
 
-- קבצי JavaScript:
-  - [home.js](http://_vscodecontentref_/18) — קרוסלת תמונות ודפי ניווט. פונקציות/משתנים חשובים:
-    - [imageArr](http://_vscodecontentref_/19) — מערך התמונות
-    - [currentIndex](http://_vscodecontentref_/20) — אינדקס נוכחי
-    - [updateImage](http://_vscodecontentref_/21) — מעדכן את התמונה
-    - [nextImage](http://_vscodecontentref_/22) — תמונה הבאה
-    - [prevImage](http://_vscodecontentref_/23) — תמונה קודמת
-    - [AstronautsWords](http://_vscodecontentref_/24) — אלמנט התמונה בדף
-  - [login.js](http://_vscodecontentref_/25) — אנימציות שדה וטיפול בכפתורים. משתנים/סלוטים:
-    - [inputs](http://_vscodecontentref_/26) — בחירת input-ים ומעגל אנימציה
-    - [buttons](http://_vscodecontentref_/27) — כפתורי החלפת טפסים
-    - [form_container](http://_vscodecontentref_/28) — מיכל הטפסים
-  - [SignUp.js](http://_vscodecontentref_/29) — אותו קוד כמו [login.js](http://_vscodecontentref_/30) (שימוש חוזר באותה לוגיקה)
+Project structure (open any file)
+- Pages
+  - home.html
+  - login.html
+  - SignUp.html
+  - OrderTickets.html
+  - Accessories.html
+  - Food.html
+  - ShoppingCart.html
+  - setting.html
+- Styles
+  - home.css
+  - menu.css
+  - login.css
+  - SignUp.css
+  - OrderTickets.css
+  - Accessories.css
+  - Food.css
+  - ShoppingCart.css
+  - setting.css
+  - index.css
+- Scripts
+  - home.js
+  - login.js
+  - SignUp.js
+- Misc
+  - README.md
+  - pictures
 
-- תיקיית תמונות:
-  - [pictures](http://_vscodecontentref_/31) — כל התמונות והאייקונים של האתר
+Important JS symbols (open file to inspect)
+- Carousel (see home.js):
+  - `imageArr`, `currentIndex`, `updateImage`, `nextImage`, `prevImage`, `AstronautsWords`
+- Login / Signup (see login.js and duplicate in SignUp.js):
+  - `inputs`, `buttons`, `form_container`
 
-נקודות לשיפור / התראה
-- יש כפילויות בין [login.js](http://_vscodecontentref_/32) ו‑SignUp.js — ניתן לאחד לקובץ משותף.
-- כמה תמונות וקבצי CSS משתמשים בשם קבצים בעברית בתמונות; ודא שהנתיבים תקינים בסביבה שבה מריצים את האתר.
-- פתיחת הקבצים בדפדפן ישירות עובדת, אך בהרצה דרך שרת סטטי תמנע בעיות CORS כאשר תוסיף משאבים נוספים.
+Recommendations to make it more professional
+- Consolidate duplicated scripts: merge login.js and SignUp.js into a single auth UI script.
+- Normalize asset filenames to ASCII (avoid Hebrew characters in filenames) to improve cross-platform compatibility.
+- Add basic form validation and accessibility (labels, aria- attributes) to login/signup flows.
+- Minify and optimize images in pictures for faster load times.
+- Add a small build step (optional): npm + a bundler (esbuild/rollup) to produce optimized assets.
+- Consider adding unit / UI tests and CI for deploy previews.
 
-אם תרצה, אני יכול:
-- לאחד את קוד ה‑JS הכפול לקובץ משותף ולשדרג שמות משתנים.
-- להוסיף דף README באנגלית.
+Contributing
+- Create issues for feature requests or bugs.
+- Submit PRs with concise change descriptions.
+
+License
+- Recommended: MIT (add LICENSE file)
+
+If you want, I can:
+- Provide the merged auth script and show the exact replacement in login.js / SignUp.js.
+- Convert Hebrew filenames and update references across HTML/CSS/JS.
+
