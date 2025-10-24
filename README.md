@@ -3,25 +3,6 @@
 
 A polished, static space-themed storefront and booking demo with a modern UI, animated menu, login/signup flows, and a simple carousel. Clean, framework-free source so you can iterate fast.
 
-Quick start ✅
-- Open [home.html](home.html) in your browser for a quick preview.
-- Recommended: run a static server (Live Server or):
-  ```sh
-  python -m http.server 8000
-
-  Collecting workspace information```markdown
-# HadaSpace — Space Experience 🚀
-
-A polished, static space-themed storefront and booking demo with a modern UI, animated menu, login/signup flows, and a simple carousel. Framework-free (vanilla HTML/CSS/JS) so it's easy to iterate and publish.
-
-Quick start ✅
-- Open [home.html](home.html) in your browser for a quick preview.
-- Recommended: run a static server (Live Server in VS Code or):
-  ```sh
-  python -m http.server 8000
-  ```
-  then open http://localhost:8000/home.html
-
 Why this repo matters ✨
 - Fast, static prototype for a space storefront and booking flow.
 - Clean separation: per-page CSS and small JS modules.
@@ -66,52 +47,3 @@ License & contribution 📦
 
 Enjoy developing! 🚀
 ```
-
-Links to referenced symbols and files in your workspace:
-- [`imageArr`](home.js) — [home.js](home.js)  
-- [`currentIndex`](home.js) — [home.js](home.js)  
-- [`updateImage`](home.js) — [home.js](home.js)  
-- [`nextImage`](home.js) — [home.js](home.js)  
-- [`prevImage`](home.js) — [home.js](home.js)  
-- [`AstronautsWords`](home.js) — [home.js](home.js)  
-- [`inputs`](login.js) — [login.js](login.js)  
-- [`buttons`](login.js) — [login.js](login.js)  
-- [`form_container`](login.js) — [login.js](login.js)
-
-All workspace files (click to open):
-- [Accessories.css](Accessories.css) | [Accessories.html](Accessories.html)
-- [Food.css](Food.css) | [Food.html](Food.html)
-- [home.css](home.css) | [home.html](home.html) | [home.js](home.js)
-- [index.css](index.css)
-- [login.css](login.css) | [login.html](login.html) | [login.js](login.js)
-- [menu.css](menu.css)
-- [OrderTickets.css](OrderTickets.css) | [OrderTickets.html](OrderTickets.html)
-- [README.md](README.md)
-- [setting.css](setting.css) | [setting.html](setting.html)
-- [ShoppingCart.css](ShoppingCart.css) | [ShoppingCart.html](ShoppingCart.html)
-- [SignUp.css](SignUp.css) | [SignUp.html](SignUp.html) | [SignUp.js](SignUp.js)
-- [pictures/](pictures/)
-Links to referenced symbols and files in your workspace:
-- [`imageArr`](home.js) — [home.js](home.js)  
-- [`currentIndex`](home.js) — [home.js](home.js)  
-- [`updateImage`](home.js) — [home.js](home.js)  
-- [`nextImage`](home.js) — [home.js](home.js)  
-- [`prevImage`](home.js) — [home.js](home.js)  
-- [`AstronautsWords`](home.js) — [home.js](home.js)  
-- [`inputs`](login.js) — [login.js](login.js)  
-- [`buttons`](login.js) — [login.js](login.js)  
-- [`form_container`](login.js) — [login.js](login.js)
-
-All workspace files (click to open):
-- [Accessories.css](Accessories.css) | [Accessories.html](Accessories.html)
-- [Food.css](Food.css) | [Food.html](Food.html)
-- [home.css](home.css) | [home.html](home.html) | [home.js](home.js)
-- [index.css](index.css)
-- [login.css](login.css) | [login.html](login.html) | [login.js](login.js)
-- [menu.css](menu.css)
-- [OrderTickets.css](OrderTickets.css) | [OrderTickets.html](OrderTickets.html)
-- [README.md](README.md)
-- [setting.css](setting.css) | [setting.html](setting.html)
-- [ShoppingCart.css](ShoppingCart.css) | [ShoppingCart.html](ShoppingCart.html)
-- [SignUp.css](SignUp.css) | [SignUp.html](SignUp.html) | [SignUp.js](SignUp.js)
-- [pictures/](pictures/)
