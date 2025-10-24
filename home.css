@@ -1,0 +1,124 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #be4769;
+}
+
+#OrderingCards1,#OrderingCards2,#OrderingCards3{
+cursor: pointer;
+position: absolute;
+}
+
+#OrderingCards1{
+right: 3cm;
+top: 5cm;
+}
+
+#OrderingCards2{
+right: 18cm;
+top: 5cm;
+}
+
+#OrderingCards3{
+right: 33cm;
+top: 5cm;
+}
+
+
+.earth-bg {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle at 30% 30%, #4B79A1, #283E51);
+    border-radius: 50%;
+    top: 800px;
+    left: -200px;
+    opacity: 0.2;
+    z-index: 0;
+    box-shadow: 0 0 100px #4B79A1;
+}
+
+
+.satellite-orbit {
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    border: 1px solid rgba(0, 246, 255, 0.2);
+    border-radius: 50%;
+    top: 750px;
+    left: -250px;
+    animation: orbit-rotate 30s infinite linear;  
+}
+
+
+.satellite {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #00f6ff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00f6ff;
+    animation: satellite-glow 2s infinite ease-in-out;
+}
+
+#satellite1 {
+    top: 0;
+    left: 50%;
+}
+
+#satellite2 {
+    bottom: 0;
+    right: 50%;
+}
+
+
+@keyframes orbit-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+#part2{
+   background-color: rgb(5, 9, 38);
+   width: 30%;
+   height: 14.5cm;
+   float: right;
+   border-radius: 100%;
+}
+
+#part2 p{
+   position: absolute;
+   text-align: center;
+   font-size: 2.5cm;
+   color: #ffffff;
+   float: right;
+   top: 31cm;
+   right: 1cm;
+}
+
+#part2Right{
+   background-color: rgb(5, 9, 38);
+   width: 50%;
+   height: 14.5cm;
+   float: right;
+}
+
+.buttons{
+  text-align: center; /* מרכז את התוכן */
+  margin-top: 10px; /* רווח קטן מעל */
+}
+
+.buttons button {
+  font-size: 18px; /* גודל */
+  padding: 10px 20px;
+  margin: 0 10px; /* רווח בין הכפתורים */
+  cursor: pointer;
+  background-color: rgb(5, 9, 38);
+}
+.buttons button {
+  color: #ffffff;
+}
